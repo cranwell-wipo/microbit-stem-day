@@ -1,0 +1,192 @@
+---
+title: micro:bit STEM Day
+date: 2026-03-12
+status: Active
+category: Community
+tags:
+  - microbit
+  - stem
+  - wipo
+  - kids
+  - event
+---
+
+# 🤖 micro:bit STEM Day
+
+A fun, hands-on robotics and STEM day organized by WIPO parents for their children — to spark curiosity and encourage learning through building, coding, creativity, and exploration. This first edition is a small pilot.
+
+## Next Actions
+
+- [ ] Decide on the room (see [[#Venue Options]])
+- [ ] Finalize the program and assign roles and language(s)
+- [ ] Decide: individual micro:bit purchases vs. one consolidated order
+- [ ] Dan to send security email about the event
+- [ ] Dan to book Luigia after confirming the final participant list
+- [ ] Buy croissants, tea, and refreshments
+- [ ] Confirm laptop availability for all children
+
+---
+
+## Participants
+
+| Parent | Child | Age | Languages | Interests |
+|--------|-------|-----|-----------|-----------|
+| James | Jad | 9 | French, English | Coding, Robots, Gaming, Lego |
+| James | Janna | 7 | French, English | Robots, Making, Lego |
+| Philippe | Adrien | 7 | French | Robots, Making, Lego |
+| ? | Lucca | 6 | French, English | Robots, Lego |
+| Dan | Christian | 6 | French, English | Coding, Robots, Lego |
+| Jean-François | Paul | 6 | French, English | |
+| Hillary | Mira | 10 | French, English | |
+| Hillary | Elisa | 9 | French, English | |
+| Sixto | Valeria | 6 | French | |
+| Javier | Laila | 6 | French | |
+| Simon | Lucas | 9 | French, English | |
+| Simon | Emilia | 7 | French, English | |
+| Jonah | Ren | 7 | French, English | |
+| Lyubo | Malena | 6 | French | |
+
+**Total:** 14 children
+
+---
+
+## Materials & Equipment
+
+| Owner | Item |
+|-------|------|
+| Dan | 1× micro:bit + extension kit with multiple sensors |
+| James | 2× micro:bits, Bambu Lab A1 Mini (3D printer demo) |
+| Daniel | 3× micro:bits |
+| All | Laptops (confirm count — may need extras) |
+
+**micro:bits available:** 6 confirmed — need to confirm if enough for all children.
+
+---
+
+## Program
+
+### 9:30 — Welcome, croissants, and introductions
+- Arrival and settling in
+- Croissants and drinks
+- Short introductions and icebreaker
+
+### 10:00 — Intro to programming and robotics
+- What is coding?
+- What is a robot?
+- What is a micro:bit and what can it do? *(devices handed out)*
+- Buttons, LED display, movement sensing, and radio communication
+
+### 10:30 — Intro to 3D printing and micro:bit case
+- What a 3D printer is and how it works
+- Examples of printed objects
+- Presentation of the micro:bit case
+- Live demo if possible (James — Bambu A1 Mini)
+
+### 11:00 — micro:bit beginner projects
+Guided examples with room for advanced participants to extend or personalize.
+
+Examples:
+- Beating heart
+- Animated animals
+- Name badge
+- Simple LED animations or mini-games
+
+Resource: [microbit.org/projects/make-it-code-it](https://microbit.org/projects/make-it-code-it/)
+
+### 11:30 — Intro to Morse code & radio communication
+- What is Morse code? How dots and dashes form letters
+- Simple decoding exercises
+- How micro:bits can send Morse-like signals over radio
+
+### 12:15 — Lunch at Luigia 🍕
+
+### 14:00 — Build a micro:bit v2 radio Morse messaging system
+
+Two programs built during the session. See [[programs]] for full code and [[kids-guide]] for the step-by-step guide for children.
+
+> [!info] Built with Claude Code
+> Both programs, the block-by-block kids guide, and this documentation were designed and written with [Claude Code](https://claude.ai/code) — used as an AI pair-programmer throughout the session prep.
+
+**Receiver** (everyone builds first):
+- Receives morse string → displays dots/dashes on LED grid
+- Button A = ✓ ACK (got it)
+- Button B = ✗ NACK (resend please)
+
+**Sender** (older/advanced kids — Mira, Jad, Lucas, Elisa):
+- Button A = dot (short beep) · Button B = dash (long tone)
+- Logo tap = send (briefly shows decoded letter, then transmits)
+- Shake = clear/cancel
+- Flashes ✓ on ACK, ✗ on NACK and auto-resends last letter
+
+**Groups:** split into small groups, each on their own radio channel — no crosstalk.
+
+**Printed reference card** on every table — morse alphabet for encoding and decoding.
+
+**Message length guide:**
+| Round | Length | Example |
+|-------|--------|---------|
+| Warm-up | 1 letter | `H`, `I`, `E` (short morse) |
+| Main | 3 letters | `SOS`, `YES`, `NO` |
+| Stretch | Short word | `HELLO`, `WIPO` |
+
+---
+
+### 14:45 — Morse challenge game
+
+#### Option A — Morse Hangman *(warm-up, quick to explain)*
+Sender transmits letters one at a time. Receivers decode and write them down. First team to shout the correct full word wins the round.
+
+#### Option B — Treasure Hunt *(main game, most memorable)*
+Morse messages from the sender (in another room) reveal clues hidden around the venue. Teams decode each message, find the object or location, and race to complete the chain.
+- Requires: clues prepared in advance, enough space to hide them
+- **Decision pending:** depends on venue — confirm once room is booked
+
+#### Option C — Fastest Decoder *(energy round)*
+Instructor sends the same 3-letter word to all groups simultaneously. First group to correctly ACK and shout the decoded word wins.
+
+#### Option D — Morse Quiz
+Instructor sends answers to simple questions (colours, animals, numbers). Teams decode and write answers. Relaxed pace — good right after lunch if energy is low.
+
+> [!note] Recommended flow
+> Hangman as warm-up → Treasure Hunt as main event (if space allows) → Fastest Decoder as a final energy round.
+
+---
+
+## Venue Options
+
+| Room | Pros | Cons |
+|------|------|------|
+| **13th floor** | Nice separated tables, cozy atmosphere, carpet & couches | Very few power plugs — bring extension cords |
+| **Red or Blue room** | Good space | Tables hard to move, room shape not ideal for movement |
+| **NB 0.107** | Good space | Tables hard to move, shape not ideal, may be too large |
+| **PCT Cafeteria** | Large table (adjustable) | Ground floor under renovation; not cozy or inviting |
+
+> [!note] Decision pending
+> 13th floor is the preferred atmosphere — confirm power situation and extension cord logistics.
+
+---
+
+## Media
+
+*Chronological order — the evening the programs were built and tested.*
+
+| Time | File | Description |
+|------|------|-------------|
+| 21:49 | ![[bambu-printing-case.mov]] | Bambu A1 Mini starting the case print |
+| 21:52 | ![[microbit-boxes-unboxed.jpg\|200]] | Two micro:bit v2 GO boxes |
+| 22:00 | ![[microbit-box-opened.jpg\|200]] | Unboxed — board and USB cable |
+| 22:10 | ![[makecode-editor.mov]] | MakeCode — building the receiver |
+| 22:13 | ![[bambu-printing-case.jpg\|200]] | Case still printing mid-session |
+| 22:26 | ![[microbit-morse-demo.mov]] | Live Morse demo between two micro:bits |
+
+### 3D Files
+
+- [[microbit-v2-aaa-case.3mf]] — Micro:bit v2 AAA battery case (printed in blue PLA for demo)
+
+---
+
+## Resources
+
+- [microbit.org](https://microbit.org/) — Official projects and MakeCode editor
+- [microbit.org/projects/make-it-code-it](https://microbit.org/projects/make-it-code-it/) — Beginner project gallery
+- [Bambu Lab A1 Mini](https://bambulab.com/en-us/a1-mini) — James's 3D printer for live demo
