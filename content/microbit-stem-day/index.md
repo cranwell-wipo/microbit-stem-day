@@ -17,12 +17,6 @@ A fun, hands-on robotics and STEM day organized by parents for their children �
 
 ---
 
-## Participants
-
-14 children aged 6–10. A mix of French and English speakers — session materials prepared in both languages.
-
----
-
 ## Materials & Equipment
 
 | Item | Quantity |
