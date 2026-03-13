@@ -76,10 +76,25 @@ Examples:
 
 Resource: [microbit.org/projects/make-it-code-it](https://microbit.org/projects/make-it-code-it/)
 
-### 11:30 — Intro to Morse code & radio communication
+### 11:20 — Marco Polo radio warm-up
+First radio activity — teaches `radio set group`, `radio send string`, and `on radio received` in the simplest possible way. See [[programs#Program 0 — Marco Polo|Program 0]].
+
+- Everyone builds the same 4-block program
+- Button A sends "Marco", Button B sends "Polo"
+- Received messages scroll across the LED display
+- **Mod:** add sound — different tones for Marco vs Polo
+- Great icebreaker: kids discover they can communicate between micro:bits for the first time
+
+> [!tip] Why start with Marco Polo?
+> It teaches the three core radio concepts (set group, send, receive) in under 10 minutes — with zero complexity. By the time kids move to Morse code, they already understand how radio blocks work.
+
+Inspired by the [MakeCode CS Intro radio activity](https://makecode.microbit.org/courses/csintro/radio/activity).
+
+### 11:40 — Intro to Morse code & radio communication
 - What is Morse code? How dots and dashes form letters
-- Simple decoding exercises
+- Simple decoding exercises on paper
 - How micro:bits can send Morse-like signals over radio
+- Brief history: Samuel Morse, the telegraph, early radio
 
 ### 12:15 — Lunch at Luigia 🍕
 
@@ -172,4 +187,5 @@ Instructor sends answers to simple questions (colours, animals, numbers). Teams 
 
 - [microbit.org](https://microbit.org/) — Official projects and MakeCode editor
 - [microbit.org/projects/make-it-code-it](https://microbit.org/projects/make-it-code-it/) — Beginner project gallery
+- [MakeCode CS Intro — Radio Activity](https://makecode.microbit.org/courses/csintro/radio/activity) — Microsoft's radio lesson (Marco Polo + simpler Morse code). Inspired the warm-up activity.
 - [Bambu Lab A1 Mini](https://bambulab.com/en-us/a1-mini) — 3D printer used for live demo

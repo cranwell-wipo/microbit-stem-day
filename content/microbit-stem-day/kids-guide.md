@@ -43,8 +43,11 @@ Morse code turns each letter of the alphabet into a pattern of **dots** (short s
 
 ## What You'll Build
 
-> [!abstract] Two programs
-> **Program 1 — The Receiver** *(everyone builds this first)*
+> [!abstract] Three programs
+> **Warm-up — Marco Polo** *(everyone builds this together)*
+> Your micro:bit sends and receives messages over radio. Press A to call "Marco", press B to reply "Polo"!
+>
+> **Program 1 — The Receiver** *(everyone builds this next)*
 > Your micro:bit listens for Morse messages over radio, shows the dots and dashes on the LED screen, and lets you send a ✓ or ✗ reply.
 >
 > **Program 2 — The Sender** *(for older/more advanced kids)*
@@ -57,6 +60,90 @@ Morse code turns each letter of the alphabet into a pattern of **dots** (short s
 - A **BBC micro:bit v2** (the one with the shiny logo button at the top)
 - A **laptop** with a browser open to: **makecode.microbit.org**
 - A **USB cable** to connect your micro:bit to the laptop
+
+---
+
+## Warm-up — Marco Polo
+
+*Everyone builds this together. It's the simplest radio program — only 4 blocks!*
+
+### How it works
+
+- Press **Button A** → sends "Marco" to all micro:bits in your group
+- Press **Button B** → sends "Polo" to all micro:bits in your group
+- When you receive a message, it scrolls across your LED screen
+
+### Step-by-step: Build Marco Polo in MakeCode
+
+**1. Open MakeCode**
+
+Go to **makecode.microbit.org** and click **New Project**. Name it `marco-polo`.
+
+---
+
+**2. Set the radio group**
+
+> [!note] What is a radio group?
+> All micro:bits in the same group can hear each other — like being on the same walkie-talkie channel.
+
+Find the **Radio** category (pink). Drag in:
+
+```
+on start
+  radio set group [ 1 ]
+```
+
+---
+
+**3. Button A — send "Marco"**
+
+From **Input**, drag **on button [ A ] pressed**. Inside it, from **Radio**, add:
+
+```
+on button [A] pressed
+  radio send string "Marco"
+```
+
+---
+
+**4. Button B — send "Polo"**
+
+From **Input**, drag **on button [ B ] pressed**. Inside it:
+
+```
+on button [B] pressed
+  radio send string "Polo"
+```
+
+---
+
+**5. Show received messages**
+
+From **Radio**, drag **on radio received (receivedString)**. Inside it, from **Basic**, add **show string** and drag the `receivedString` variable into it:
+
+```
+on radio received (receivedString)
+  show string [ receivedString ]
+```
+
+---
+
+**6. Flash and test!**
+
+Click **Download**, connect your micro:bit, copy the `.hex` file. Now press **A** — does "Marco" appear on your friend's screen? Try pressing **B** to reply "Polo"!
+
+---
+
+**7. Bonus: add sounds!**
+
+From **Music**, add `play tone` blocks to your buttons:
+- Button A: `play tone [ Low C ] for [ 1 beat ]`
+- Button B: `play tone [ Middle C ] for [ 1 beat ]`
+
+Now each call and response has its own sound!
+
+> [!success] You just learned radio!
+> You used three radio blocks: **set group** (pick your channel), **send string** (broadcast a message), and **on radio received** (listen for messages). Every program today uses these same three blocks!
 
 ---
 
