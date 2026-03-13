@@ -176,6 +176,7 @@ Instructor sends answers to simple questions (colours, animals, numbers). Teams 
 | 22:10 | ![[makecode-editor.mov]] | MakeCode — building the receiver |
 | 22:13 | ![[bambu-printing-case.jpg\|200]] | Case still printing mid-session |
 | 22:26 | ![[microbit-morse-demo.mov]] | Live Morse demo between two micro:bits |
+| 22:40 | ![[bambu-finished-case.jpg\|200]] | Finished 3D printed micro:bit case |
 
 ### 3D Files
 
