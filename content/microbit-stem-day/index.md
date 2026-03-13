@@ -15,16 +15,6 @@ tags:
 
 A fun, hands-on robotics and STEM day organized by parents for their children — to spark curiosity and encourage learning through building, coding, creativity, and exploration. This first edition is a small pilot.
 
-## Next Actions
-
-- [ ] Decide on the room (see [[#Venue Options]])
-- [ ] Finalize the program and assign roles and language(s)
-- [ ] Decide: individual micro:bit purchases vs. one consolidated order
-- [ ] Dan to send security email about the event
-- [ ] Book Luigia after confirming the final participant list
-- [ ] Buy croissants, tea, and refreshments
-- [ ] Confirm laptop availability for all children
-
 ---
 
 ## Participants
@@ -137,7 +127,6 @@ Sender transmits letters one at a time. Receivers decode and write them down. Fi
 #### Option B — Treasure Hunt *(main game, most memorable)*
 Morse messages from the sender (in another room) reveal clues hidden around the venue. Teams decode each message, find the object or location, and race to complete the chain.
 - Requires: clues prepared in advance, enough space to hide them
-- **Decision pending:** depends on venue — confirm once room is booked
 
 #### Option C — Fastest Decoder *(energy round)*
 Instructor sends the same 3-letter word to all groups simultaneously. First group to correctly ACK and shout the decoded word wins.
@@ -147,20 +136,6 @@ Instructor sends answers to simple questions (colours, animals, numbers). Teams 
 
 > [!note] Recommended flow
 > Hangman as warm-up → Treasure Hunt as main event (if space allows) → Fastest Decoder as a final energy round.
-
----
-
-## Venue Options
-
-| Room | Pros | Cons |
-|------|------|------|
-| **13th floor** | Nice separated tables, cozy atmosphere, carpet & couches | Very few power plugs — bring extension cords |
-| **Red or Blue room** | Good space | Tables hard to move, room shape not ideal for movement |
-| **NB 0.107** | Good space | Tables hard to move, shape not ideal, may be too large |
-| **PCT Cafeteria** | Large table (adjustable) | Ground floor under renovation; not cozy or inviting |
-
-> [!note] Decision pending
-> 13th floor is the preferred atmosphere — confirm power situation and extension cord logistics.
 
 ---
 
