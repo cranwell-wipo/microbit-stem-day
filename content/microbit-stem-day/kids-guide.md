@@ -211,7 +211,7 @@ Ask the instructor to send a Morse letter. You should see dots and dashes appear
 
 ## Part 2 — The Sender
 
-*For older or more advanced kids: Mira, Jad, Lucas, Elisa — and anyone who finishes the receiver early!*
+*For older or more advanced kids (ages 9–10) — and anyone who finishes the receiver early!*
 
 ### How it works
 

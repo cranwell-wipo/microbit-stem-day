@@ -21,7 +21,7 @@ A fun, hands-on robotics and STEM day organized by WIPO parents for their childr
 - [ ] Finalize the program and assign roles and language(s)
 - [ ] Decide: individual micro:bit purchases vs. one consolidated order
 - [ ] Dan to send security email about the event
-- [ ] Dan to book Luigia after confirming the final participant list
+- [ ] Book Luigia after confirming the final participant list
 - [ ] Buy croissants, tea, and refreshments
 - [ ] Confirm laptop availability for all children
 
@@ -29,35 +29,18 @@ A fun, hands-on robotics and STEM day organized by WIPO parents for their childr
 
 ## Participants
 
-| Parent | Child | Age | Languages | Interests |
-|--------|-------|-----|-----------|-----------|
-| James | Jad | 9 | French, English | Coding, Robots, Gaming, Lego |
-| James | Janna | 7 | French, English | Robots, Making, Lego |
-| Philippe | Adrien | 7 | French | Robots, Making, Lego |
-| ? | Lucca | 6 | French, English | Robots, Lego |
-| Dan | Christian | 6 | French, English | Coding, Robots, Lego |
-| Jean-François | Paul | 6 | French, English | |
-| Hillary | Mira | 10 | French, English | |
-| Hillary | Elisa | 9 | French, English | |
-| Sixto | Valeria | 6 | French | |
-| Javier | Laila | 6 | French | |
-| Simon | Lucas | 9 | French, English | |
-| Simon | Emilia | 7 | French, English | |
-| Jonah | Ren | 7 | French, English | |
-| Lyubo | Malena | 6 | French | |
-
-**Total:** 14 children
+14 children aged 6–10 from WIPO families. A mix of French and English speakers — session materials prepared in both languages.
 
 ---
 
 ## Materials & Equipment
 
-| Owner | Item |
-|-------|------|
-| Dan | 1× micro:bit + extension kit with multiple sensors |
-| James | 2× micro:bits, Bambu Lab A1 Mini (3D printer demo) |
-| Daniel | 3× micro:bits |
-| All | Laptops (confirm count — may need extras) |
+| Item | Quantity |
+|------|----------|
+| micro:bit v2 + extension kit with sensors | 1 |
+| micro:bit v2 | 5 |
+| Bambu Lab A1 Mini (3D printer demo) | 1 |
+| Laptops | 1 per child (confirm count — may need extras) |
 
 **micro:bits available:** 6 confirmed — need to confirm if enough for all children.
 
@@ -80,7 +63,7 @@ A fun, hands-on robotics and STEM day organized by WIPO parents for their childr
 - What a 3D printer is and how it works
 - Examples of printed objects
 - Presentation of the micro:bit case
-- Live demo if possible (James — Bambu A1 Mini)
+- Live demo if possible (Bambu A1 Mini)
 
 ### 11:00 — micro:bit beginner projects
 Guided examples with room for advanced participants to extend or personalize.
@@ -112,7 +95,7 @@ Two programs built during the session. See [[programs]] for full code and [[kids
 - Button A = ✓ ACK (got it)
 - Button B = ✗ NACK (resend please)
 
-**Sender** (older/advanced kids — Mira, Jad, Lucas, Elisa):
+**Sender** (older/advanced kids aged 9–10):
 - Button A = dot (short beep) · Button B = dash (long tone)
 - Logo tap = send (briefly shows decoded letter, then transmits)
 - Shake = clear/cancel
@@ -189,4 +172,4 @@ Instructor sends answers to simple questions (colours, animals, numbers). Teams 
 
 - [microbit.org](https://microbit.org/) — Official projects and MakeCode editor
 - [microbit.org/projects/make-it-code-it](https://microbit.org/projects/make-it-code-it/) — Beginner project gallery
-- [Bambu Lab A1 Mini](https://bambulab.com/en-us/a1-mini) — James's 3D printer for live demo
+- [Bambu Lab A1 Mini](https://bambulab.com/en-us/a1-mini) — 3D printer used for live demo

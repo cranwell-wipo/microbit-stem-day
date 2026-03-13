@@ -12,9 +12,7 @@ const config: QuartzConfig = {
     pageTitleSuffix: " — WIPO",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
+    analytics: null,
     locale: "en-US",
     baseUrl: "cranwell-wipo.github.io/microbit-stem-day",
     ignorePatterns: ["private", "templates", ".obsidian"],

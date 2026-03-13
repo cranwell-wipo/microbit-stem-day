@@ -1,17 +1,29 @@
-# Quartz v4
+# micro:bit STEM Day
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+A hands-on robotics and STEM day organized by WIPO parents for their children. Kids build Morse code radio communication systems using BBC micro:bit v2 boards and MakeCode.
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
+## What's in this repo
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+This is a [Quartz](https://quartz.jzhao.xyz/) documentation site containing:
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+- **Event overview** — program, materials, venue, and game ideas
+- **MakeCode Programs** — block-by-block build instructions for a Morse sender and receiver
+- **Kids Guide** — step-by-step instructions for children on the day
 
-## Sponsors
+## Programs
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+| Program | Who | What it does |
+|---------|-----|--------------|
+| **Receiver** | Everyone | Receives Morse over radio, shows dots/dashes on LEDs. Button A = ACK, Button B = NACK |
+| **Sender** | Older kids | Button A = dot, Button B = dash, logo = send, shake = cancel. Auto-resends on NACK |
+
+## Development
+
+```bash
+npm ci
+npx quartz build --serve   # local preview at http://localhost:8080
+```
+
+## Credits
+
+Built with [Quartz v4](https://quartz.jzhao.xyz/) and [Claude Code](https://claude.ai/code).

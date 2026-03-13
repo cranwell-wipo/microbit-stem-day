@@ -238,7 +238,7 @@ Ask the instructor to send a Morse letter. Dots and dashes should appear on your
 
 ## Program 2 — Sender
 
-**Who builds it:** Older / more advanced children — Mira (10), Jad (9), Lucas (9), Elisa (9), and anyone who finishes the receiver early.
+**Who builds it:** Older / more advanced children (ages 9–10), and anyone who finishes the receiver early.
 
 **What it does:**
 - Button A → tap a **dot** (short beep, one LED column)
