@@ -14,6 +14,9 @@ Three programs, built block by block in **MakeCode** (makecode.microbit.org). Ki
 
 **Radio group:** hardcoded per group — change the number in `radio set group [ 1 ]` before sharing with each group.
 
+> [!info] Source code for parents
+> Complete TypeScript files for all three programs are in the [`code/`](https://github.com/cranwell-wipo/microbit-stem-day/tree/main/code) folder. You can paste them directly into MakeCode's JavaScript view to pre-flash micro:bits or follow along during the session.
+
 ---
 
 ## Program 0 — Marco Polo (radio warm-up)
