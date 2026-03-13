@@ -6,14 +6,14 @@ category: Community
 tags:
   - microbit
   - stem
-  - wipo
+  - stem-day
   - kids
   - event
 ---
 
 # 🤖 micro:bit STEM Day
 
-A fun, hands-on robotics and STEM day organized by WIPO parents for their children — to spark curiosity and encourage learning through building, coding, creativity, and exploration. This first edition is a small pilot.
+A fun, hands-on robotics and STEM day organized by parents for their children — to spark curiosity and encourage learning through building, coding, creativity, and exploration. This first edition is a small pilot.
 
 ## Next Actions
 
@@ -29,7 +29,7 @@ A fun, hands-on robotics and STEM day organized by WIPO parents for their childr
 
 ## Participants
 
-14 children aged 6–10 from WIPO families. A mix of French and English speakers — session materials prepared in both languages.
+14 children aged 6–10. A mix of French and English speakers — session materials prepared in both languages.
 
 ---
 
@@ -125,7 +125,7 @@ Two programs built during the session. See [[programs]] for full code and [[kids
 |-------|--------|---------|
 | Warm-up | 1 letter | `H`, `I`, `E` (short morse) |
 | Main | 3 letters | `SOS`, `YES`, `NO` |
-| Stretch | Short word | `HELLO`, `WIPO` |
+| Stretch | Short word | `HELLO`, `MORSE` |
 
 ---
 

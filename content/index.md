@@ -2,9 +2,9 @@
 title: micro:bit STEM Day
 ---
 
-# 🤖 micro:bit STEM Day — WIPO
+# 🤖 micro:bit STEM Day
 
-Welcome! This site documents the micro:bit Morse code project built for the WIPO Parents STEM Day.
+Welcome! This site documents the micro:bit Morse code project built for a Parents STEM Day.
 
 - [[microbit-stem-day/index|Event overview]] — program, participants, venue
 - [[microbit-stem-day/programs|MakeCode Programs]] — block-by-block build instructions  

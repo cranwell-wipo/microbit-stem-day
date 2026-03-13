@@ -11,7 +11,7 @@ tags:
 
 # 🤖 Build a Morse Code Radio with micro:bit
 
-**Welcome to the WIPO STEM Day!** Today you're going to build a real radio communication system — just like the ones used by sailors and explorers over 100 years ago. You'll send secret messages using dots and dashes, and your friends will decode them!
+**Welcome to STEM Day!** Today you're going to build a real radio communication system — just like the ones used by sailors and explorers over 100 years ago. You'll send secret messages using dots and dashes, and your friends will decode them!
 
 ---
 
@@ -494,7 +494,7 @@ The instructor sends the same 3-letter word to all groups at once. First group t
 |-------|--------|---------|
 | Warm-up | 1 letter | `H`, `I`, `E` |
 | Main | 3 letters | `SOS`, `YES`, `HI` |
-| Stretch | Short word | `HELLO`, `WIPO` |
+| Stretch | Short word | `HELLO`, `MORSE` |
 
 ---
 
@@ -550,4 +550,4 @@ Finished early? Here are some ideas:
 
 ---
 
-*Built at the WIPO STEM Day — March 2026* 🎉
+*Built at STEM Day — March 2026* 🎉

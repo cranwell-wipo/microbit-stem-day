@@ -1,6 +1,6 @@
 # micro:bit STEM Day
 
-A hands-on robotics and STEM day organized by WIPO parents for their children. Kids build Morse code radio communication systems using BBC micro:bit v2 boards and MakeCode.
+A hands-on robotics and STEM day organized by parents for their children. Kids build Morse code radio communication systems using BBC micro:bit v2 boards and MakeCode.
 
 ## What's in this repo
 

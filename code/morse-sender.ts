@@ -1,5 +1,5 @@
 // Morse Sender
-// micro:bit STEM Day — WIPO
+// micro:bit STEM Day
 //
 // For older/advanced kids (ages 9-10) and anyone who finishes the receiver early.
 // Button A = dot (short beep), Button B = dash (long beep),

@@ -1,5 +1,5 @@
 // Morse Receiver
-// micro:bit STEM Day — WIPO
+// micro:bit STEM Day
 //
 // Everyone builds this after Marco Polo.
 // Receives Morse patterns over radio and displays dots/dashes on the LED grid.

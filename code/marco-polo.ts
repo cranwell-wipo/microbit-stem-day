@@ -1,5 +1,5 @@
 // Marco Polo — Radio Warm-up
-// micro:bit STEM Day — WIPO
+// micro:bit STEM Day
 //
 // Everyone builds this first. The simplest radio program:
 // Button A sends "Marco", Button B sends "Polo",
