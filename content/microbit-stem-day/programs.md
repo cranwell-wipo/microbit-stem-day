@@ -10,157 +10,13 @@ tags:
 
 # micro:bit Morse Programs
 
-Three programs, built block by block in **MakeCode** (makecode.microbit.org). Kids build each block step by step during the session — the JavaScript is provided at the end of each section as a facilitator reference only.
+Two programs, built block by block in **MakeCode** (makecode.microbit.org). Kids build each block step by step during the session — the JavaScript is provided at the end of each section as a facilitator reference only.
 
 **Radio group:** hardcoded per group — change the number in `radio set group [ 1 ]` before sharing with each group.
 
-> [!info] Source code for parents
-> Complete TypeScript files for all three programs are in the [`code/`](https://github.com/cranwell-wipo/microbit-stem-day/tree/main/code) folder. You can paste them directly into MakeCode's JavaScript view to pre-flash micro:bits or follow along during the session.
-
 ---
 
-## Program 0 — Marco Polo (radio warm-up)
-
-**Who builds it:** Everyone — this is the very first program of the day.
-
-**What it does:**
-- Button A → sends "Marco" over radio
-- Button B → sends "Polo" over radio
-- Received messages scroll across the LED screen
-
-**Time:** ~10 minutes. Inspired by the [MakeCode CS Intro radio activity](https://makecode.microbit.org/courses/csintro/radio/activity).
-
-> [!tip] Why start here?
-> Marco Polo introduces the three core radio blocks — `radio set group`, `radio send string`, and `on radio received` — with zero complexity. Once kids see messages appear on each other's screens, they understand how radio works and are ready for Morse code.
-
----
-
-### Step 1 — on start
-
-From **Basic** (blue), drag **on start** onto the canvas.
-
-Inside it, add:
-
-- From **Radio** (pink): **radio set group [ 1 ]**
-- From **Basic**: **show leds** — draw your initials or a fun icon so you know the program is loaded
-
-```
-┌─ on start ─────────────────────────────┐
-│  radio set group [ 1 ]                 │
-│  show leds [ your initials / icon ]    │
-└────────────────────────────────────────┘
-```
-
----
-
-### Step 2 — Button A (send "Marco")
-
-From **Input**, drag **on button [ A ] pressed**.
-
-Inside it, add:
-
-- From **Radio**: **radio send string [ "Marco" ]**
-
-```
-┌─ on button A pressed ──────────────────┐
-│  radio send string "Marco"             │
-└────────────────────────────────────────┘
-```
-
----
-
-### Step 3 — Button B (send "Polo")
-
-From **Input**, drag **on button [ B ] pressed**.
-
-Inside it, add:
-
-- From **Radio**: **radio send string [ "Polo" ]**
-
-```
-┌─ on button B pressed ──────────────────┐
-│  radio send string "Polo"              │
-└────────────────────────────────────────┘
-```
-
----
-
-### Step 4 — Show received messages
-
-From **Radio**, drag **on radio received (receivedString)** onto the canvas.
-
-Inside it, add:
-
-- From **Basic**: **show string [ receivedString ]**
-
-Drag the `receivedString` variable from the block header into the `show string` block.
-
-```
-┌─ on radio received (receivedString) ───┐
-│  show string [ receivedString ]        │
-└────────────────────────────────────────┘
-```
-
----
-
-### Step 5 — Flash and test!
-
-Click **Download**, connect your micro:bit, and copy the `.hex` file. Press **A** on your micro:bit — does "Marco" scroll across your friend's screen?
-
----
-
-### Mod: add sound!
-
-From **Music**, drag `play tone` blocks into the button handlers:
-
-- Button A: `play tone [ Low C ] for [ 1 beat ]` — a deep "Marco" tone
-- Button B: `play tone [ Middle C ] for [ 1 beat ]` — a higher "Polo" tone
-
-```
-┌─ on button A pressed ──────────────────┐
-│  radio send string "Marco"             │
-│  play tone [ Low C ] for [ 1 beat ]    │
-└────────────────────────────────────────┘
-
-┌─ on button B pressed ──────────────────┐
-│  radio send string "Polo"              │
-│  play tone [ Middle C ] for [ 1 beat ] │
-└────────────────────────────────────────┘
-```
-
----
-
-### JavaScript reference (facilitator)
-
-> [!example]- Click to expand — Marco Polo JavaScript
-> ```javascript
-> radio.setGroup(1)
-> basic.showLeds(`
->     # . # # #
->     # # # # #
->     # . # # #
->     # . # # .
->     # . # # .
-> `)
->
-> input.onButtonPressed(Button.A, function () {
->     radio.sendString("Marco")
->     music.playTone(131, music.beat(BeatFraction.Whole))
-> })
->
-> input.onButtonPressed(Button.B, function () {
->     radio.sendString("Polo")
->     music.playTone(262, music.beat(BeatFraction.Whole))
-> })
->
-> radio.onReceivedString(function (receivedString) {
->     basic.showString(receivedString)
-> })
-> ```
-
----
-
-## Display Convention (shared by Morse programs)
+## Display Convention (shared by both programs)
 
 Morse symbols appear **left to right**, one column per symbol. Max 4 symbols (columns 0–3).
 
@@ -382,7 +238,7 @@ Ask the instructor to send a Morse letter. Dots and dashes should appear on your
 
 ## Program 2 — Sender
 
-**Who builds it:** Older / more advanced children (ages 9–10), and anyone who finishes the receiver early.
+**Who builds it:** Older / more advanced children — Mira (10), Jad (9), Lucas (9), Elisa (9), and anyone who finishes the receiver early.
 
 **What it does:**
 - Button A → tap a **dot** (short beep, one LED column)
@@ -561,18 +417,11 @@ From **Radio**, drag **on radio received (receivedString)**.
 │    if (length of lastSent) > 0                            │
 │      radio send string [ lastSent ]                       │
 │      call plotMorse (lastSent)                            │
-│  else                                                     │
-│    show icon [ ? ]                                        │
-│    pause (ms) [ 500 ]                                     │
-│    clear screen                                           │
 └───────────────────────────────────────────────────────────┘
 ```
 
 > [!note] What happens on NACK?
 > The sender shows ✗ for 800ms, then automatically resends the last letter and re-draws it on screen. The receivers will see the dots and dashes again.
-
-> [!tip] Why the catch-all `else`?
-> Good coding practice: if the radio receives something unexpected (not ACK and not NACK), show a `?` instead of silently ignoring it. This makes debugging much easier — you can *see* that something unexpected arrived.
 
 ---
 
@@ -675,10 +524,6 @@ Download and flash the same way as the receiver. You're ready to send!
 >             radio.sendString(lastSent)
 >             plotMorse(lastSent)
 >         }
->     } else {
->         basic.showIcon(IconNames.QuestionMark)
->         basic.pause(500)
->         basic.clearScreen()
 >     }
 > })
 > ```
@@ -687,17 +532,8 @@ Download and flash the same way as the receiver. You're ready to send!
 
 ## Notes for facilitators
 
-- Start with **Marco Polo** — it takes ~10 minutes and gets every child comfortable with the radio blocks before Morse adds complexity
 - Build `plotMorse` **together as a class** before splitting into receiver/sender — it's identical in both programs
 - The **receiver** is the natural warm-up: fewer concepts, works quickly, immediately satisfying to test
 - The **sender** builds on top — kids who finish the receiver early can move straight to it
 - The **Morse lookup table** (two parallel lists + find index) is the hardest concept in the sender — worth a short group explanation before that step: *"the two lists are like two columns in a table — always the same length, always lined up"*
-- **Pause + clear screen pattern:** when displaying feedback (✓, ✗, icons), always follow with a `pause` then `clear screen` or redraw — otherwise repeated messages look like nothing happened because the display doesn't change. This is a common gotcha worth explaining!
-- **Catch-all else:** encourage kids to add an `else` clause that shows `?` for unexpected values — it teaches defensive programming and makes debugging visible
 - All sounds require **micro:bit v2** (built-in speaker). v1 devices work but will be silent
-
-## Resources
-
-- [MakeCode CS Intro — Radio Activity](https://makecode.microbit.org/courses/csintro/radio/activity) — Microsoft's official radio lesson (Marco Polo + simpler Morse). Good reference for teaching concepts.
-- [microbit.org](https://microbit.org/) — Official projects and MakeCode editor
-- [microbit.org/projects/make-it-code-it](https://microbit.org/projects/make-it-code-it/) — Beginner project gallery

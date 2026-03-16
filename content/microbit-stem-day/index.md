@@ -84,7 +84,17 @@ Inspired by the [MakeCode CS Intro radio activity](https://makecode.microbit.org
 
 ### 14:00 — Build a micro:bit v2 radio Morse messaging system
 
-Two programs built during the session. See [[programs]] for full code and [[kids-guide]] for the step-by-step guide for children.
+Two programs built during the session:
+
+| Guide | Language |
+|-------|----------|
+| [[receiver-guide\|Receiver Guide]] | English |
+| [[sender-guide\|Sender Guide]] | English |
+| [[receiver-guide-fr\|Guide du Récepteur]] | Français |
+| [[sender-guide-fr\|Guide de l'Émetteur]] | Français |
+| [[kids-guide\|Kids Overview Guide]] | English |
+| [[kids-guide-fr\|Guide des Enfants]] | Français |
+| [[programs\|Programs & Code Reference]] | English |
 
 > [!info] Built with Claude Code
 > Both programs, the block-by-block kids guide, and this documentation were designed and written with [Claude Code](https://claude.ai/code) — used as an AI pair-programmer throughout the session prep.
