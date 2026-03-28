@@ -32,7 +32,7 @@ Voici notre imprimante en action pendant la journée :
 
 ### Le résultat final
 
-![Boîtier terminé](microbit-stem-day/bambu-finished-case.jpg)
+![Boîtier terminé avec micro:bit](microbit-stem-day/microbit-box-opened.jpg)
 
 *Le boîtier imprimé et terminé — prêt à accueillir un micro:bit !*
 
@@ -40,7 +40,7 @@ Voici notre imprimante en action pendant la journée :
 
 > [!example]- 🎥 Cliquer pour voir la vidéo
 > <video controls width="100%">
->   <source src="microbit-stem-day/bambu-printing-case.mov" type="video/quicktime">
+>   <source src="../microbit-stem-day/bambu-printing-case.mov" type="video/mp4">
 >   Ton navigateur ne supporte pas la lecture vidéo.
 > </video>
 

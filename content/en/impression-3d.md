@@ -32,7 +32,7 @@ Here's our printer in action during the day:
 
 ### The finished result
 
-![Finished case](microbit-stem-day/bambu-finished-case.jpg)
+![Finished case with micro:bit](microbit-stem-day/microbit-box-opened.jpg)
 
 *The printed case, ready to hold a micro:bit!*
 
@@ -40,7 +40,7 @@ Here's our printer in action during the day:
 
 > [!example]- 🎥 Click to watch the video
 > <video controls width="100%">
->   <source src="microbit-stem-day/bambu-printing-case.mov" type="video/quicktime">
+>   <source src="../microbit-stem-day/bambu-printing-case.mov" type="video/mp4">
 >   Your browser does not support video playback.
 > </video>
 

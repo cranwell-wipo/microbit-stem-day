@@ -31,8 +31,6 @@ Aujourd'hui tu vas découvrir la programmation, construire des systèmes de comm
 | 🔧 14:00 | Construis ta radio Morse ! |
 | 🏆 14:45 | Défis et jeux Morse ! |
 
-[[microbit-stem-day/index|📋 Programme complet →]]
-
 ---
 
 ## 📡 Construis ta radio Morse !

@@ -18,6 +18,7 @@ const explorerOpts = {
       "receiver-guide-fr": "📻 Morse Récepteur (avancé)",
       "sender-guide-fr": "📡 Morse Émetteur (avancé)",
       "kids-guide-fr": "📖 Morse Extra",
+      "microbit-stem-day": "📋 Détails supplémentaires",
     }
     const seg = node.slugSegment
     if (seg && labels[seg]) {
@@ -51,6 +52,7 @@ const explorerOpts = {
       "receiver-guide-fr",
       "sender-guide-fr",
       "kids-guide-fr",
+      "microbit-stem-day",
     ]
     const idxA = order.indexOf(segA)
     const idxB = order.indexOf(segB)
@@ -63,7 +65,7 @@ const explorerOpts = {
       sensitivity: "base",
     })
   },
-  filterFn: (node: any) => node.slugSegment !== "tags" && node.slugSegment !== "microbit-stem-day",
+  filterFn: (node: any) => node.slugSegment !== "tags",
 }
 
 // components shared across all pages
