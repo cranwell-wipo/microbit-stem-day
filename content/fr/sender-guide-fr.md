@@ -2,6 +2,9 @@
 title: "Construis un émetteur Morse 📡"
 date: 2026-03-14
 tags: [microbit, stem, kids]
+aliases:
+  - microbit-stem-day/sender-guide-fr
+  - sender-guide-fr
 ---
 
 # Construis un émetteur Morse 📡

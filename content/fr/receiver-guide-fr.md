@@ -2,6 +2,9 @@
 title: "Construis un récepteur Morse 📻"
 date: 2026-03-14
 tags: [microbit, stem, kids]
+aliases:
+  - microbit-stem-day/receiver-guide-fr
+  - receiver-guide-fr
 ---
 
 # Construis un récepteur Morse 📻

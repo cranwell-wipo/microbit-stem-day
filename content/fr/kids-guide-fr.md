@@ -6,6 +6,9 @@ tags:
   - microbit
   - stem
   - kids
+aliases:
+  - microbit-stem-day/kids-guide-fr
+  - kids-guide-fr
   - guide
 ---
 
@@ -43,11 +46,17 @@ Le code Morse transforme chaque lettre de l'alphabet en une suite de **points** 
 
 ## Ce que tu vas construire
 
-> [!abstract] Deux programmes
-> **Programme 1 — Le Récepteur** *(tout le monde commence par ça)*
+> [!abstract] Quatre programmes
+> **Échauffement — Marco Polo** *(tout le monde construit ça ensemble)*
+> Ton micro:bit envoie et reçoit des messages par radio. Appuie sur A pour crier « Marco », sur B pour répondre « Polo » !
+>
+> **Émetteur-Récepteur Morse Simple** *(tout le monde construit ça — activité principale de l'après-midi)*
+> Un seul programme qui fait de ton micro:bit à la fois un émetteur et un récepteur ! Bouton A pour un point, B pour un tiret, A+B pour fin de lettre, secouer pour fin de mot. Tu décodes avec ta carte Morse. Voir le [[simple-morse-guide-fr|Guide Morse Simple]].
+>
+> **Récepteur avancé** *(optionnel, pour les enfants qui veulent aller plus loin)*
 > Ton micro:bit écoute les messages Morse par radio, affiche les points et tirets sur l'écran LED, et te laisse envoyer une réponse ✓ ou ✗.
 >
-> **Programme 2 — L'Émetteur** *(pour les plus grands ou les plus avancé·e·s)*
+> **Émetteur avancé** *(optionnel, pour les plus grands ou les plus avancé·e·s)*
 > Ton micro:bit te laisse taper des points et des tirets avec les boutons, puis envoie le code Morse par radio à tous les récepteurs.
 
 ---

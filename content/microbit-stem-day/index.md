@@ -37,20 +37,20 @@ A fun, hands-on robotics and STEM day organized by parents for their children �
 - Croissants and drinks
 - Short introductions and icebreaker
 
-### 10:00 — Intro to programming and robotics
+### 10:00 — Intro to programming and robotics *(JF, Olga)*
 - What is coding?
 - What is a robot?
 - What is a micro:bit and what can it do? *(devices handed out)*
 - Buttons, LED display, movement sensing, and radio communication
 
-### 10:30 — Intro to 3D printing and micro:bit case
+### 10:30 — Intro to 3D printing and micro:bit case *(Jad)*
 - What a 3D printer is and how it works
 - Examples of printed objects
 - Presentation of the micro:bit case
 - Live demo if possible (Bambu A1 Mini)
 
-### 11:00 — micro:bit beginner projects
-Guided examples with room for advanced participants to extend or personalize.
+### 11:00 — micro:bit beginner projects *(All)*
+Children follow simple guided examples, with room for advanced participants to personalize or extend.
 
 Examples:
 - Beating heart
@@ -60,31 +60,40 @@ Examples:
 
 Resource: [microbit.org/projects/make-it-code-it](https://microbit.org/projects/make-it-code-it/)
 
-### 11:20 — Marco Polo radio warm-up
-First radio activity — teaches `radio set group`, `radio send string`, and `on radio received` in the simplest possible way. See [[programs#Program 0 — Marco Polo|Program 0]].
-
-- Everyone builds the same 4-block program
-- Button A sends "Marco", Button B sends "Polo"
-- Received messages scroll across the LED display
-- **Mod:** add sound — different tones for Marco vs Polo
-- Great icebreaker: kids discover they can communicate between micro:bits for the first time
-
-> [!tip] Why start with Marco Polo?
-> It teaches the three core radio concepts (set group, send, receive) in under 10 minutes — with zero complexity. By the time kids move to Morse code, they already understand how radio blocks work.
-
-Inspired by the [MakeCode CS Intro radio activity](https://makecode.microbit.org/courses/csintro/radio/activity).
-
-### 11:40 — Intro to Morse code & radio communication
+### 11:30 — Intro to Morse code & radio communication *(Hillary)*
+- YouTube video introduction to Morse code
+- Distribute the Morse reference cards
 - What is Morse code? How dots and dashes form letters
-- Simple decoding exercises on paper
+- Simple decoding exercises — decode a message projected on the screen
 - How micro:bits can send Morse-like signals over radio
-- Brief history: Samuel Morse, the telegraph, early radio
 
 ### 12:15 — Lunch at Luigia 🍕
 
 ### 14:00 — Build a micro:bit v2 radio Morse messaging system
 
-Two programs built during the session:
+Each child builds a **simple micro:bit radio-based Morse transceiver**. The same program runs on every micro:bit — everyone can send and receive. The instructor's micro:bit can be taken to another room to send messages that children decode.
+
+**Main activity:**
+- The instructor micro:bit acts as the sender (can be in another room)
+- The children's micro:bits act as receivers
+- All devices use the same radio group
+- Button A = dot, Button B = dash, A+B = end of letter, Shake = end of word
+- Children decode dots/dashes manually using the printed Morse card
+
+**For beginners:** receive and display dots and dashes, then decode the message manually with the Morse card.
+
+**For non-beginners:** try to decode the whole letter or word without looking at the card.
+
+**Extra for advanced children:** try the advanced [[receiver-guide|Receiver]] and [[sender-guide|Sender]] programs with automatic letter decoding.
+
+#### Build guides
+
+| Guide | Language |
+|-------|----------|
+| [[simple-morse-guide\|Simple Morse Guide]] | English |
+| [[simple-morse-guide-fr\|Guide Morse Simple]] | Français |
+
+#### Advanced guides (optional)
 
 | Guide | Language |
 |-------|----------|
@@ -96,23 +105,9 @@ Two programs built during the session:
 | [[kids-guide-fr\|Guide des Enfants]] | Français |
 | [[programs\|Programs & Code Reference]] | English |
 
-> [!info] Built with Claude Code
-> Both programs, the block-by-block kids guide, and this documentation were designed and written with [Claude Code](https://claude.ai/code) — used as an AI pair-programmer throughout the session prep.
-
-**Receiver** (everyone builds first):
-- Receives morse string → displays dots/dashes on LED grid
-- Button A = ✓ ACK (got it)
-- Button B = ✗ NACK (resend please)
-
-**Sender** (older/advanced kids aged 9–10):
-- Button A = dot (short beep) · Button B = dash (long tone)
-- Logo tap = send (briefly shows decoded letter, then transmits)
-- Shake = clear/cancel
-- Flashes ✓ on ACK, ✗ on NACK and auto-resends last letter
-
 **Groups:** split into small groups, each on their own radio channel — no crosstalk.
 
-**Printed reference card** on every table — morse alphabet for encoding and decoding.
+**Printed reference card** on every table — Morse alphabet for encoding and decoding.
 
 **Message length guide:**
 | Round | Length | Example |
@@ -160,6 +155,17 @@ Instructor sends answers to simple questions (colours, animals, numbers). Teams 
 ### 3D Files
 
 - [[microbit-v2-aaa-case.3mf]] — Micro:bit v2 AAA battery case (printed in blue PLA for demo)
+
+---
+
+## 🎓 Presentations
+
+Slides used during the day (click to download):
+
+| Presentation | Language |
+|-------------|----------|
+| [🖥️ Journée Code et Robots](Journee_Code_et_Robots_v2.pptx) | 🇫🇷 Français |
+| [📡 Code Morse et Communication](Code_Morse_et_Communication.pptx) | 🇫🇷 Français |
 
 ---
 

@@ -1,6 +1,71 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
+const explorerOpts = {
+  title: "🗂️ Activités",
+  folderDefaultState: "open" as const,
+  folderClickBehavior: "link" as const,
+  mapFn: (node: any) => {
+    const labels: Record<string, string> = {
+      en: "🇬🇧 English",
+      fr: "🇫🇷 Français",
+      "simple-morse-guide": "� Morse Chat (beginner)",
+      "receiver-guide": "📻 Morse Receiver (advanced)",
+      "sender-guide": "📡 Morse Sender (advanced)",
+      "kids-guide": "📖 Morse Extra",
+      "impression-3d": "🖨️ Impression 3D",
+      "simple-morse-guide-fr": "💬 Morse Chat (débutant)",
+      "receiver-guide-fr": "📻 Morse Récepteur (avancé)",
+      "sender-guide-fr": "📡 Morse Émetteur (avancé)",
+      "kids-guide-fr": "📖 Morse Extra",
+    }
+    const seg = node.slugSegment
+    if (seg && labels[seg]) {
+      node.displayName = labels[seg]
+    }
+  },
+  sortFn: (a: any, b: any) => {
+    const segA = a.slugSegment ?? ""
+    const segB = b.slugSegment ?? ""
+
+    // Folders first
+    if (a.isFolder && !b.isFolder) return -1
+    if (!a.isFolder && b.isFolder) return 1
+
+    // Programs/reference last among files
+    if (segA === "impression-3d") return 1
+    if (segB === "impression-3d") return -1
+
+    // en before fr among folders
+    if (segA === "en" && segB === "fr") return -1
+    if (segA === "fr" && segB === "en") return 1
+
+    // Within a language folder: morse-chat → receiver → sender → kids → 3d
+    const order = [
+      "simple-morse-guide",
+      "receiver-guide",
+      "sender-guide",
+      "kids-guide",
+      "impression-3d",
+      "simple-morse-guide-fr",
+      "receiver-guide-fr",
+      "sender-guide-fr",
+      "kids-guide-fr",
+    ]
+    const idxA = order.indexOf(segA)
+    const idxB = order.indexOf(segB)
+    if (idxA !== -1 && idxB !== -1) return idxA - idxB
+    if (idxA !== -1) return -1
+    if (idxB !== -1) return 1
+
+    return a.displayName.localeCompare(b.displayName, undefined, {
+      numeric: true,
+      sensitivity: "base",
+    })
+  },
+  filterFn: (node: any) => node.slugSegment !== "tags" && node.slugSegment !== "microbit-stem-day",
+}
+
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
@@ -8,8 +73,8 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      "microbit.org": "https://microbit.org/",
+      MakeCode: "https://makecode.microbit.org/",
     },
   }),
 }
@@ -18,11 +83,9 @@ export const sharedPageComponents: SharedLayout = {
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
     Component.ConditionalRender({
-      component: Component.Breadcrumbs(),
+      component: Component.ArticleTitle(),
       condition: (page) => page.fileData.slug !== "index",
     }),
-    Component.ArticleTitle(),
-    Component.ContentMeta(),
     Component.TagList(),
   ],
   left: [
@@ -35,13 +98,11 @@ export const defaultContentPageLayout: PageLayout = {
           grow: true,
         },
         { Component: Component.Darkmode() },
-        { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer(explorerOpts),
   ],
   right: [
-    Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],
@@ -49,7 +110,7 @@ export const defaultContentPageLayout: PageLayout = {
 
 // components for pages that display lists of pages  (e.g. tags or folders)
 export const defaultListPageLayout: PageLayout = {
-  beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
+  beforeBody: [Component.ArticleTitle()],
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
@@ -62,7 +123,7 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer(explorerOpts),
   ],
   right: [],
 }

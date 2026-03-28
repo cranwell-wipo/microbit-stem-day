@@ -1,3 +1,40 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+// Kid-friendly hero banner on homepage
+.hero-banner {
+  background: linear-gradient(135deg, #38b6ff 0%, #e05297 50%, #ff9f43 100%);
+  border-radius: 1rem;
+  padding: 2rem 2.5rem;
+  margin: 0 0 1.5rem 0;
+  color: white;
+  text-align: center;
+
+  h1 {
+    color: white;
+    font-size: 2.2rem;
+    margin: 0 0 0.3rem 0;
+  }
+
+  h3 {
+    color: rgba(255, 255, 255, 0.92);
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin: 0;
+  }
+}
+
+[saved-theme="dark"] .hero-banner {
+  background: linear-gradient(135deg, #1a5276 0%, #8e2e5e 50%, #b36b2a 100%);
+}
+
+// Larger, friendlier table text on guide pages
+article table {
+  font-size: 0.98rem;
+}
+
+// Wider emoji column in schedule table
+article table td:first-child {
+  white-space: nowrap;
+}

@@ -2,6 +2,9 @@
 title: "Build a Morse Sender 📡"
 date: 2026-03-14
 tags: [microbit, stem, kids]
+aliases:
+  - microbit-stem-day/sender-guide
+  - sender-guide
 ---
 
 # Build a Morse Sender 📡

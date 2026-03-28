@@ -6,6 +6,9 @@ tags:
   - microbit
   - stem
   - kids
+aliases:
+  - microbit-stem-day/kids-guide
+  - kids-guide
   - guide
 ---
 
@@ -43,14 +46,17 @@ Morse code turns each letter of the alphabet into a pattern of **dots** (short s
 
 ## What You'll Build
 
-> [!abstract] Three programs
+> [!abstract] Four programs
 > **Warm-up — Marco Polo** *(everyone builds this together)*
 > Your micro:bit sends and receives messages over radio. Press A to call "Marco", press B to reply "Polo"!
 >
-> **Program 1 — The Receiver** *(everyone builds this next)*
+> **Simple Morse Transceiver** *(everyone builds this — main afternoon activity)*
+> One program that makes your micro:bit both a sender and a receiver! Press A for dot, B for dash, A+B for end of letter, shake for end of word. You decode with your Morse card. See the [[simple-morse-guide|Simple Morse Guide]].
+>
+> **Advanced Receiver** *(optional, for kids who want more)*
 > Your micro:bit listens for Morse messages over radio, shows the dots and dashes on the LED screen, and lets you send a ✓ or ✗ reply.
 >
-> **Program 2 — The Sender** *(for older/more advanced kids)*
+> **Advanced Sender** *(optional, for older/more advanced kids)*
 > Your micro:bit lets you tap dots and dashes with the buttons, then sends the Morse pattern over radio to all the receivers.
 
 ---
