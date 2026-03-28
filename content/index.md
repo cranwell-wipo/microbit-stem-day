@@ -24,7 +24,7 @@ Aujourd'hui tu vas découvrir la programmation, construire des systèmes de comm
 |-------|----------|
 | ☕ 9:30 | Accueil, croissants et présentations |
 | 💻 10:00 | [C'est quoi le codage ? C'est quoi un robot ? Découvre le micro:bit !](microbit-stem-day/Journee_Code_et_Robots_v2.pptx) |
-| 🖨️ 10:30 | [[impression-3d\|Démo d'impression 3D]] |
+| 🖨️ 10:30 | [[fr/impression-3d\|Démo d'impression 3D]] |
 | 🎮 11:00 | [Premiers projets micro:bit — cœurs, animaux, jeux !](https://microbit.org/projects/make-it-code-it/) |
 | 📡 11:30 | [Découvre le code Morse](microbit-stem-day/Code_Morse_et_Communication.pptx) |
 | 🍕 12:15 | Déjeuner |
@@ -45,7 +45,7 @@ C'est l'activité principale de l'après-midi — **un programme qui permet à c
 | 📻 **Récepteur avancé** *(optionnel)* | [[receiver-guide-fr\|Guide du Récepteur]] |
 | 📡 **Émetteur avancé** *(optionnel)* | [[sender-guide-fr\|Guide de l'Émetteur]] |
 | 📖 **Morse Extra** | [[kids-guide-fr\|Guide complet & jeux]] |
-| 🖨️ **Impression 3D** | [[impression-3d\|Découvrir l'impression 3D]] |
+| 🖨️ **Impression 3D** | [[fr/impression-3d\|Découvrir l'impression 3D]] |
 
 ---
 

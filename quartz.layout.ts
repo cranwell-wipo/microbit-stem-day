@@ -36,9 +36,9 @@ const explorerOpts = {
     if (segA === "impression-3d") return 1
     if (segB === "impression-3d") return -1
 
-    // en before fr among folders
-    if (segA === "en" && segB === "fr") return -1
-    if (segA === "fr" && segB === "en") return 1
+    // fr before en among folders
+    if (segA === "fr" && segB === "en") return -1
+    if (segA === "en" && segB === "fr") return 1
 
     // Within a language folder: morse-chat → receiver → sender → kids → 3d
     const order = [
