@@ -24,25 +24,25 @@ A machine that **builds objects layer by layer** in 3 dimensions!
 
 Here's our printer in action during the day:
 
-### Printing in progress
+### 🎥 Video: live printing
 
-![Printing a micro:bit case](microbit-stem-day/bambu-printing-case.jpg)
-
-*The Bambu A1 Mini 3D printer making a case for the micro:bit — layer by layer!*
+> [!example]- 🎥 Click to watch the video
+> <video controls width="100%" playsinline>
+>   <source src="../microbit-stem-day/bambu-printing-case.mov" type="video/quicktime">
+>   <p>Your browser does not support this video format. <a href="../microbit-stem-day/bambu-printing-case.mov">Download the video</a></p>
+> </video>
 
 ### The finished result
 
-![Finished case with micro:bit](microbit-stem-day/microbit-box-opened.jpg)
+![Printed micro:bit case](microbit-stem-day/bambu-printing-case.jpg)
 
-*The printed case, ready to hold a micro:bit!*
+*The 3D printed case made by the Bambu A1 Mini — ready to hold a micro:bit!*
 
-### Video: live printing
+### The micro:bit
 
-> [!example]- 🎥 Click to watch the video
-> <video controls width="100%">
->   <source src="../microbit-stem-day/bambu-printing-case.mov" type="video/mp4">
->   Your browser does not support video playback.
-> </video>
+![The micro:bit v2](microbit-stem-day/microbit-box-opened.jpg)
+
+*This is the micro:bit v2 — the little electronic board that fits inside the 3D printed case above!*
 
 ---
 

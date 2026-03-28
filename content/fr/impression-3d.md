@@ -24,25 +24,25 @@ Une machine qui **construit des objets couche par couche**, en 3 dimensions !
 
 Voici notre imprimante en action pendant la journée :
 
-### L'impression en cours
+### 🎥 Vidéo : l'impression en direct
 
-![Impression d'un boîtier pour micro:bit](microbit-stem-day/bambu-printing-case.jpg)
-
-*L'imprimante 3D Bambu A1 Mini en train de fabriquer un boîtier pour le micro:bit — couche par couche !*
+> [!example]- 🎥 Cliquer pour voir la vidéo
+> <video controls width="100%" playsinline>
+>   <source src="../microbit-stem-day/bambu-printing-case.mov" type="video/quicktime">
+>   <p>Ton navigateur ne supporte pas ce format vidéo. <a href="../microbit-stem-day/bambu-printing-case.mov">Télécharger la vidéo</a></p>
+> </video>
 
 ### Le résultat final
 
-![Boîtier terminé avec micro:bit](microbit-stem-day/microbit-box-opened.jpg)
+![Boîtier imprimé pour micro:bit](microbit-stem-day/bambu-printing-case.jpg)
 
-*Le boîtier imprimé et terminé — prêt à accueillir un micro:bit !*
+*Le boîtier imprimé en 3D par la Bambu A1 Mini — prêt à accueillir un micro:bit !*
 
-### Vidéo : l'impression en direct
+### Le micro:bit
 
-> [!example]- 🎥 Cliquer pour voir la vidéo
-> <video controls width="100%">
->   <source src="../microbit-stem-day/bambu-printing-case.mov" type="video/mp4">
->   Ton navigateur ne supporte pas la lecture vidéo.
-> </video>
+![Le micro:bit v2](microbit-stem-day/microbit-box-opened.jpg)
+
+*Voici le micro:bit v2 — c'est cette petite carte électronique qui se glisse dans le boîtier imprimé ci-dessus !*
 
 ---
 
